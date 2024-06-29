@@ -14,7 +14,14 @@ ServerEvents.recipes(event => {
     //bronze
 main
     event.recipes.create.mixing('kubejs:bronze_ingot', '2x create:brass_ingot', 'create:zinc').heated()
-
+    event.recipes.create.mixing('kubejs:bronze_ingot', 'minecraft:copper', 'create:zinc').heated()
+    event.recipes.create.pressing(['kubejs:bronze_block', Item.of('kubejs:bronze_ingot').withChance(50)], '7x kubejs:bronze_ingot')
+    event.shapeless(
+      Item.of('kubejs:bronze_ingot', 9), // arg 1: output
+      [
+        'kubejs:bronze_block',
+      ]
+    )
     event.shaped('kubejs:bronze_block', [
     'AAA', 
     'AAA',
@@ -23,11 +30,6 @@ main
     A: 'kubejs:bronze_ingot' 
   }
 )
-
-
-=======
-    event.recipes.create.mixing('kubejs:bronze_ingot', 'minecraft:copper', 'create:zinc').heated()
-    event.recipes.create.pressing('kubejs:bronze_block', '4x kubejs:bronze_ingot')
-    //steel
+  //steel
 
 })
