@@ -16,4 +16,5 @@ StartupEvents.registry('block', event => {
 
     event.create('bronze_block').displayName('Bronze Block')
     event.create('steel_block').displayName('Steel Block')
+    
 })
