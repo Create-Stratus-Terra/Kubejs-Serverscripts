@@ -12,6 +12,20 @@ ServerEvents.recipes(event => {
     // Industrial Iron Boiler
     event.stonecutting('4x design_decor:industrial_iron_boiler', '#create:industrial_iron_block')
     //bronze
+main
+    event.recipes.create.mixing('kubejs:bronze_ingot', '2x create:brass_ingot', 'create:zinc').heated()
+
+    event.shaped('kubejs:bronze_block', [
+    'AAA', 
+    'AAA',
+    'AAA'  
+  ], {
+    A: 'kubejs:bronze_ingot' 
+  }
+)
+
+
+=======
     event.recipes.create.mixing('kubejs:bronze_ingot', 'minecraft:copper', 'create:zinc').heated()
     event.recipes.create.pressing('kubejs:bronze_block', '4x kubejs:bronze_ingot')
     //steel
