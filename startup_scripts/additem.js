@@ -13,8 +13,13 @@ StartupEvents.registry('item', event => {
 StartupEvents.registry('block', event => {
     //Register new block here
     //event.create('example_block').material('wood').hardness(1.0).displayName('Example block)
+ main
 
     event.create('bronze_block').displayName('Bronze Block')
     event.create('steel_block').displayName('Steel Block')
     
+=======
+    event.create('bronze_block').displayName('Bronze Block')
+    event.create('steel_block').displayName('Steel Block')
+
 })
