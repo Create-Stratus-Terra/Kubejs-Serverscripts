@@ -87,7 +87,7 @@ main
      'AAA', 
      'AAA',
      'AAA'  
-   ], {
+    ], {
     A: 'kubejs:steel_ingot' 
    })
 })
