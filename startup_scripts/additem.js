@@ -9,6 +9,7 @@ StartupEvents.registry('item', event => {
     //steel
     event.create('unpolished_steel_ingot').displayName('Unpolished Steel Ingot')
     event.create('unfired_steel_ingot').displayName('Unfired Steel Ingot')
+    event.create('steel_ingot').displayName('Steel Ingot')
 
     //bronze
     event.create('bronze_ingot').displayName('Bronze Ingot')
@@ -23,6 +24,7 @@ StartupEvents.registry('block', event => {
     //steel
     event.create('unpolished_steel_block').displayName('Unpolished Steel Block')
     event.create('unfired_steel_block').displayName('Unfired Steel Block')
+    event.create('steel_block').displayName('Steel Block')
 
     //bronze
     event.create('bronze_block').displayName('Bronze Block')
