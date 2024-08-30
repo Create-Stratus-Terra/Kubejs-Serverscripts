@@ -47,7 +47,31 @@ main
    ], {
      A: 'kubejs:unpolished_steel_ingot' 
    })
+   
+    //1 ingot to 1 block
+   event.shapeless('1x createdeco:andesite_sheet', [
+     'create_dd:andesite_sheet',
+   ])
 
+   //1 ingot to 1 block
+   event.shapeless('1x create_dd:andesite_sheet', [
+     'createdeco:andesite_sheet',
+   ])
+
+      //1 ingot to 1 block
+   event.shapeless('1x createdeco:zinc_sheet', [
+     'createaddition:zinc_sheet',
+   ])
+
+   //1 ingot to 1 block
+   event.shapeless('1x createaddition:zinc_sheet', [
+     'createdeco:zinc_sheet',
+   ])
+  
+    event.shapeless('2x createdeco:zinc_sheet', [
+     '2x create_dd:zinc_sheet',
+   ])
+    
    //polish unpolished block
    ServerEvents.recipes(event => {
     event.recipes.create.sandpaper_polishing('kubejs:steel_block', 'kubejs:unpolished_steel_block')
